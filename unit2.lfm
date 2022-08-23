@@ -1,0 +1,1195 @@
+object Form2: TForm2
+  Left = 276
+  Height = 629
+  Top = 53
+  Width = 961
+  Caption = 'Options'
+  ClientHeight = 629
+  ClientWidth = 961
+  LCLVersion = '1.0.14.0'
+  object Label1: TLabel
+    Left = 8
+    Height = 16
+    Top = 16
+    Width = 174
+    Caption = 'NA/K-ATPase CONFIGURATION:'
+    Color = clYellow
+    ParentColor = False
+    Transparent = False
+  end
+  object Edit1: TEdit
+    Left = 8
+    Height = 23
+    Top = 40
+    Width = 48
+    TabOrder = 0
+    Text = '2'
+  end
+  object Edit2: TEdit
+    Left = 99
+    Height = 23
+    Top = 40
+    Width = 48
+    TabOrder = 1
+    Text = '3'
+  end
+  object Label2: TLabel
+    Left = 56
+    Height = 16
+    Top = 48
+    Width = 31
+    Caption = 'K+ IN'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 152
+    Height = 16
+    Top = 47
+    Width = 51
+    Caption = 'Na+ OUT'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 8
+    Height = 16
+    Top = 71
+    Width = 111
+    Caption = 'Na/K-ATPase power:'
+    ParentColor = False
+  end
+  object Edit3: TEdit
+    Left = 128
+    Height = 23
+    Top = 64
+    Width = 72
+    TabOrder = 2
+    Text = '13'
+  end
+  object Label5: TLabel
+    Left = 10
+    Height = 16
+    Top = 153
+    Width = 136
+    Caption = 'ION FLOW PARAMETERS:'
+    Color = clYellow
+    ParentColor = False
+    Transparent = False
+  end
+  object Label6: TLabel
+    Left = 10
+    Height = 16
+    Top = 180
+    Width = 91
+    Caption = 'Na conductance:'
+    ParentColor = False
+  end
+  object Edit4: TEdit
+    Left = 107
+    Height = 23
+    Top = 173
+    Width = 80
+    TabOrder = 3
+    Text = '0,05'
+  end
+  object Label7: TLabel
+    Left = 14
+    Height = 16
+    Top = 205
+    Width = 83
+    Caption = 'K conductance:'
+    ParentColor = False
+  end
+  object Edit5: TEdit
+    Left = 107
+    Height = 23
+    Top = 199
+    Width = 80
+    TabOrder = 4
+    Text = '5'
+  end
+  object Label12: TLabel
+    Left = 421
+    Height = 16
+    Top = 482
+    Width = 72
+    Caption = 'Temperature:'
+    ParentColor = False
+  end
+  object Edit9: TEdit
+    Left = 491
+    Height = 23
+    Top = 475
+    Width = 80
+    TabOrder = 5
+    Text = '310'
+  end
+  object Label13: TLabel
+    Left = 336
+    Height = 16
+    Top = 456
+    Width = 172
+    Caption = 'MISCELLANEOUS PARAMETERS:'
+    Color = clYellow
+    ParentColor = False
+    Transparent = False
+    OnClick = Label13Click
+  end
+  object Label14: TLabel
+    Left = 433
+    Height = 16
+    Top = 506
+    Width = 73
+    Caption = 'Time interval:'
+    ParentColor = False
+  end
+  object Edit10: TEdit
+    Left = 491
+    Height = 23
+    Top = 499
+    Width = 80
+    TabOrder = 6
+    Text = '0,35'
+  end
+  object Button1: TButton
+    Left = 824
+    Height = 31
+    Top = 8
+    Width = 122
+    Caption = 'OK'
+    OnClick = Button1Click
+    TabOrder = 7
+  end
+  object Label15: TLabel
+    Left = 187
+    Height = 16
+    Top = 180
+    Width = 39
+    Caption = 'mSi/uF'
+    ParentColor = False
+  end
+  object Label16: TLabel
+    Left = 187
+    Height = 16
+    Top = 205
+    Width = 39
+    Caption = 'mSi/uF'
+    ParentColor = False
+  end
+  object Label19: TLabel
+    Left = 574
+    Height = 16
+    Top = 482
+    Width = 8
+    Caption = 'K'
+    ParentColor = False
+  end
+  object Label20: TLabel
+    Left = 574
+    Height = 16
+    Top = 506
+    Width = 17
+    Caption = 'ms'
+    ParentColor = False
+  end
+  object Label21: TLabel
+    Left = 391
+    Height = 16
+    Top = 530
+    Width = 97
+    Caption = 'Initial cell volume:'
+    ParentColor = False
+  end
+  object Edit11: TEdit
+    Left = 491
+    Height = 23
+    Top = 523
+    Width = 80
+    TabOrder = 8
+    Text = '25,84e-6'
+  end
+  object Label22: TLabel
+    Left = 574
+    Height = 16
+    Top = 530
+    Width = 11
+    Caption = 'ul'
+    ParentColor = False
+  end
+  object Label23: TLabel
+    Left = 23
+    Height = 16
+    Top = 269
+    Width = 78
+    Caption = 'Initial cNaOUT'
+    ParentColor = False
+  end
+  object Edit12: TEdit
+    Left = 107
+    Height = 23
+    Top = 262
+    Width = 80
+    TabOrder = 9
+    Text = '34,9'
+  end
+  object Label24: TLabel
+    Left = 187
+    Height = 16
+    Top = 269
+    Width = 41
+    Caption = 'mmol/l'
+    ParentColor = False
+  end
+  object Label25: TLabel
+    Left = 426
+    Height = 16
+    Top = 554
+    Width = 123
+    Caption = 'Duration of simulation:'
+    ParentColor = False
+  end
+  object Edit13: TEdit
+    Left = 491
+    Height = 23
+    Top = 547
+    Width = 80
+    TabOrder = 10
+    Text = '600000'
+  end
+  object Label26: TLabel
+    Left = 576
+    Height = 16
+    Top = 554
+    Width = 17
+    Caption = 'ms'
+    ParentColor = False
+  end
+  object Label27: TLabel
+    Left = 8
+    Height = 16
+    Top = 95
+    Width = 89
+    Caption = 'Sensitivity to Na:'
+    ParentColor = False
+  end
+  object Edit14: TEdit
+    Left = 96
+    Height = 23
+    Top = 88
+    Width = 80
+    TabOrder = 11
+    Text = '0,025'
+  end
+  object Label28: TLabel
+    Left = 8
+    Height = 16
+    Top = 119
+    Width = 81
+    Caption = 'Sensitivity to K:'
+    ParentColor = False
+  end
+  object Edit15: TEdit
+    Left = 96
+    Height = 23
+    Top = 112
+    Width = 80
+    TabOrder = 12
+    Text = '1'
+  end
+  object Label29: TLabel
+    Left = 176
+    Height = 16
+    Top = 95
+    Width = 41
+    Caption = 'l/mmol'
+    ParentColor = False
+  end
+  object Label30: TLabel
+    Left = 176
+    Height = 16
+    Top = 119
+    Width = 41
+    Caption = 'l/mmol'
+    ParentColor = False
+  end
+  object Edit16: TEdit
+    Left = 491
+    Height = 23
+    Top = 571
+    Width = 80
+    TabOrder = 13
+    Text = '5,182e-6'
+  end
+  object Label31: TLabel
+    Left = 408
+    Height = 16
+    Top = 578
+    Width = 67
+    Caption = 'ECF volume:'
+    ParentColor = False
+  end
+  object Label32: TLabel
+    Left = 575
+    Height = 16
+    Top = 578
+    Width = 11
+    Caption = 'ul'
+    ParentColor = False
+  end
+  object CheckBox1: TCheckBox
+    Left = 326
+    Height = 19
+    Top = 595
+    Width = 165
+    Caption = 'Stop the pump action after:'
+    TabOrder = 14
+  end
+  object Edit17: TEdit
+    Left = 491
+    Height = 23
+    Top = 595
+    Width = 80
+    TabOrder = 15
+    Text = '100'
+  end
+  object Label33: TLabel
+    Left = 574
+    Height = 16
+    Top = 598
+    Width = 17
+    Caption = 'ms'
+    ParentColor = False
+  end
+  object Label34: TLabel
+    Left = 202
+    Height = 16
+    Top = 71
+    Width = 34
+    Caption = 'pA/pF'
+    ParentColor = False
+  end
+  object Label35: TLabel
+    Left = 27
+    Height = 16
+    Top = 349
+    Width = 58
+    Caption = 'Initial cKIN'
+    ParentColor = False
+  end
+  object Edit18: TEdit
+    Left = 107
+    Height = 23
+    Top = 342
+    Width = 80
+    TabOrder = 16
+    Text = '117,3'
+  end
+  object Label36: TLabel
+    Left = 187
+    Height = 16
+    Top = 349
+    Width = 41
+    Caption = 'mmol/l'
+    ParentColor = False
+  end
+  object Label37: TLabel
+    Left = 23
+    Height = 16
+    Top = 293
+    Width = 66
+    Caption = 'Initial cNaIN'
+    ParentColor = False
+  end
+  object Edit19: TEdit
+    Left = 107
+    Height = 23
+    Top = 286
+    Width = 80
+    TabOrder = 17
+    Text = '34,9'
+  end
+  object Label38: TLabel
+    Left = 187
+    Height = 16
+    Top = 293
+    Width = 41
+    Caption = 'mmol/l'
+    ParentColor = False
+  end
+  object Label39: TLabel
+    Left = 187
+    Height = 16
+    Top = 325
+    Width = 41
+    Caption = 'mmol/l'
+    ParentColor = False
+  end
+  object Edit20: TEdit
+    Left = 107
+    Height = 23
+    Top = 318
+    Width = 80
+    TabOrder = 18
+    Text = '117,3'
+  end
+  object Label40: TLabel
+    Left = 27
+    Height = 16
+    Top = 325
+    Width = 70
+    Caption = 'Initial cKOUT'
+    ParentColor = False
+  end
+  object Label17: TLabel
+    Left = 336
+    Height = 16
+    Top = 214
+    Width = 162
+    Caption = 'Relative electrical permittivity::'
+    ParentColor = False
+  end
+  object Edit21: TEdit
+    Left = 501
+    Height = 23
+    Top = 205
+    Width = 80
+    TabOrder = 19
+    Text = '5'
+  end
+  object Label42: TLabel
+    Left = 584
+    Height = 16
+    Top = 238
+    Width = 19
+    Caption = 'nm'
+    ParentColor = False
+  end
+  object Edit22: TEdit
+    Left = 501
+    Height = 23
+    Top = 231
+    Width = 80
+    TabOrder = 20
+    Text = '9'
+  end
+  object Label18: TLabel
+    Left = 344
+    Height = 16
+    Top = 238
+    Width = 152
+    Caption = 'Plasma membrane thickness'
+    ParentColor = False
+  end
+  object Label43: TLabel
+    Left = 370
+    Height = 16
+    Top = 262
+    Width = 128
+    Caption = 'Plasma membrane area:'
+    ParentColor = False
+  end
+  object Label44: TLabel
+    Left = 583
+    Height = 16
+    Top = 264
+    Width = 29
+    Caption = 'mm2'
+    ParentColor = False
+  end
+  object Edit23: TEdit
+    Left = 501
+    Height = 23
+    Top = 256
+    Width = 80
+    TabOrder = 21
+    Text = '0,01534'
+  end
+  object Label8: TLabel
+    Left = 14
+    Height = 16
+    Top = 447
+    Width = 120
+    Caption = 'Na permeability (GHK)'
+    ParentColor = False
+  end
+  object Label9: TLabel
+    Left = 18
+    Height = 16
+    Top = 472
+    Width = 112
+    Caption = 'K permeability (GHK)'
+    ParentColor = False
+  end
+  object Edit6: TEdit
+    Left = 146
+    Height = 23
+    Top = 440
+    Width = 80
+    TabOrder = 22
+    Text = '2e-8'
+  end
+  object Edit7: TEdit
+    Left = 146
+    Height = 23
+    Top = 466
+    Width = 80
+    TabOrder = 23
+    Text = '2e-6'
+  end
+  object Label41: TLabel
+    Left = 226
+    Height = 16
+    Top = 447
+    Width = 28
+    Caption = 'cm/s'
+    ParentColor = False
+  end
+  object Label45: TLabel
+    Left = 226
+    Height = 16
+    Top = 472
+    Width = 28
+    Caption = 'cm/s'
+    ParentColor = False
+  end
+  object Label46: TLabel
+    Left = 23
+    Height = 16
+    Top = 381
+    Width = 74
+    Caption = 'Initial cClOUT'
+    ParentColor = False
+  end
+  object Label47: TLabel
+    Left = 23
+    Height = 16
+    Top = 405
+    Width = 62
+    Caption = 'Initial cClIN'
+    ParentColor = False
+  end
+  object Edit24: TEdit
+    Left = 107
+    Height = 23
+    Top = 399
+    Width = 80
+    TabOrder = 24
+    Text = '2,2'
+  end
+  object Edit25: TEdit
+    Left = 107
+    Height = 23
+    Top = 374
+    Width = 80
+    TabOrder = 25
+    Text = '117,2'
+  end
+  object Label48: TLabel
+    Left = 187
+    Height = 16
+    Top = 381
+    Width = 41
+    Caption = 'mmol/l'
+    ParentColor = False
+  end
+  object Label49: TLabel
+    Left = 186
+    Height = 16
+    Top = 405
+    Width = 41
+    Caption = 'mmol/l'
+    ParentColor = False
+  end
+  object Label10: TLabel
+    Left = 14
+    Height = 16
+    Top = 228
+    Width = 87
+    Caption = 'Cl conductance:'
+    ParentColor = False
+  end
+  object Edit8: TEdit
+    Left = 107
+    Height = 23
+    Top = 222
+    Width = 80
+    TabOrder = 26
+    Text = '0,05'
+  end
+  object Label50: TLabel
+    Left = 187
+    Height = 16
+    Top = 228
+    Width = 39
+    Caption = 'mSi/uF'
+    ParentColor = False
+  end
+  object Label11: TLabel
+    Left = 18
+    Height = 16
+    Top = 500
+    Width = 116
+    Caption = 'Cl permeability (GHK)'
+    ParentColor = False
+  end
+  object Edit27: TEdit
+    Left = 146
+    Height = 23
+    Top = 494
+    Width = 80
+    TabOrder = 27
+    Text = '2e-8'
+  end
+  object Label53: TLabel
+    Left = 226
+    Height = 16
+    Top = 500
+    Width = 28
+    Caption = 'cm/s'
+    ParentColor = False
+  end
+  object Label54: TLabel
+    Left = 336
+    Height = 16
+    Top = 184
+    Width = 69
+    Caption = 'CAPACITOR:'
+    Color = clYellow
+    ParentColor = False
+    Transparent = False
+  end
+  object Label55: TLabel
+    Left = 336
+    Height = 16
+    Top = 303
+    Width = 109
+    Caption = 'IMPERMEANT IONS:'
+    Color = clYellow
+    ParentColor = False
+    Transparent = False
+  end
+  object CheckBox2: TCheckBox
+    Left = 336
+    Height = 19
+    Top = 327
+    Width = 295
+    Caption = 'I''d like to include Impermeant Ions in the simulation'
+    Checked = True
+    State = cbChecked
+    TabOrder = 28
+  end
+  object Label56: TLabel
+    Left = 373
+    Height = 16
+    Top = 351
+    Width = 108
+    Caption = 'Impermeant Ions_IN'
+    ParentColor = False
+  end
+  object Edit28: TEdit
+    Left = 488
+    Height = 23
+    Top = 344
+    Width = 80
+    TabOrder = 29
+    Text = '143,2'
+  end
+  object Label57: TLabel
+    Left = 568
+    Height = 16
+    Top = 351
+    Width = 41
+    Caption = 'mmol/l'
+    ParentColor = False
+  end
+  object Button2: TButton
+    Left = 10
+    Height = 24
+    Top = 521
+    Width = 271
+    Caption = 'Copy conductance for permeability'
+    OnClick = Button2Click
+    TabOrder = 30
+  end
+  object Label58: TLabel
+    Left = 664
+    Height = 16
+    Top = 440
+    Width = 151
+    Caption = 'RESULTS DISPLAY OPTIONS:'
+    Color = clYellow
+    ParentColor = False
+    Transparent = False
+  end
+  object Label51: TLabel
+    Left = 663
+    Height = 16
+    Top = 473
+    Width = 126
+    Caption = 'Every (all-1, other-2, ...):'
+    ParentColor = False
+  end
+  object Edit26: TEdit
+    Left = 800
+    Height = 23
+    Top = 465
+    Width = 80
+    TabOrder = 31
+    Text = '500'
+  end
+  object CheckBox3: TCheckBox
+    Left = 664
+    Height = 19
+    Top = 497
+    Width = 156
+    Caption = 'Only the final state results'
+    OnClick = CheckBox3Click
+    TabOrder = 32
+  end
+  object CheckBox4: TCheckBox
+    Left = 664
+    Height = 19
+    Top = 520
+    Width = 288
+    Caption = 'Do not clear the boxes when displaying new results'
+    Enabled = False
+    TabOrder = 33
+  end
+  object Label52: TLabel
+    Left = 408
+    Height = 16
+    Top = 32
+    Width = 124
+    Caption = 'Hydraulic conductivity:'
+    ParentColor = False
+    OnClick = Label52Click
+  end
+  object Edit29: TEdit
+    Left = 548
+    Height = 23
+    Top = 24
+    Width = 80
+    TabOrder = 34
+    Text = '1,7e-10'
+  end
+  object Label59: TLabel
+    Left = 592
+    Height = 1
+    Top = 46
+    Width = 1
+    ParentColor = False
+  end
+  object Label60: TLabel
+    Left = 336
+    Height = 16
+    Top = 8
+    Width = 54
+    Caption = 'OSMOSIS:'
+    Color = clYellow
+    ParentColor = False
+    Transparent = False
+  end
+  object Label62: TLabel
+    Left = 319
+    Height = 16
+    Top = 408
+    Width = 166
+    Caption = 'Charge of Impermeant Ions_IN:'
+    ParentColor = False
+  end
+  object Edit30: TEdit
+    Left = 488
+    Height = 23
+    Top = 399
+    Width = 80
+    TabOrder = 35
+    Text = '150'
+  end
+  object Label63: TLabel
+    Left = 568
+    Height = 16
+    Top = 406
+    Width = 46
+    Caption = '(-mEq)/l'
+    ParentColor = False
+  end
+  object Label64: TLabel
+    Left = 408
+    Height = 16
+    Top = 60
+    Width = 134
+    Caption = 'Osmotic coefficient (Na):'
+    ParentColor = False
+    OnClick = Label52Click
+  end
+  object Edit31: TEdit
+    Left = 548
+    Height = 23
+    Top = 52
+    Width = 80
+    TabOrder = 36
+    Text = '1'
+  end
+  object Label66: TLabel
+    Left = 408
+    Height = 16
+    Top = 88
+    Width = 126
+    Caption = 'Osmotic coefficient (K):'
+    ParentColor = False
+    OnClick = Label52Click
+  end
+  object Edit32: TEdit
+    Left = 548
+    Height = 23
+    Top = 80
+    Width = 80
+    TabOrder = 37
+    Text = '1'
+  end
+  object Label68: TLabel
+    Left = 408
+    Height = 16
+    Top = 111
+    Width = 130
+    Caption = 'Osmotic coefficient (Cl):'
+    ParentColor = False
+    OnClick = Label52Click
+  end
+  object Edit33: TEdit
+    Left = 548
+    Height = 23
+    Top = 103
+    Width = 80
+    TabOrder = 38
+    Text = '1'
+  end
+  object Label72: TLabel
+    Left = 336
+    Height = 16
+    Top = 133
+    Width = 209
+    Caption = 'Osmotic coefficient (Impermeant Ions):'
+    ParentColor = False
+    OnClick = Label52Click
+  end
+  object Edit35: TEdit
+    Left = 548
+    Height = 23
+    Top = 127
+    Width = 80
+    TabOrder = 39
+    Text = '1'
+  end
+  object Label74: TLabel
+    Left = 696
+    Height = 16
+    Top = 8
+    Width = 97
+    Caption = 'RESULTS SHOWN:'
+    Color = clYellow
+    ParentColor = False
+    Transparent = False
+  end
+  object CheckBox5: TCheckBox
+    Left = 696
+    Height = 19
+    Top = 31
+    Width = 65
+    Caption = 'cNaOUT'
+    TabOrder = 40
+  end
+  object CheckBox6: TCheckBox
+    Left = 696
+    Height = 19
+    Top = 52
+    Width = 53
+    Caption = 'cNaIN'
+    Checked = True
+    State = cbChecked
+    TabOrder = 41
+  end
+  object CheckBox7: TCheckBox
+    Left = 696
+    Height = 19
+    Top = 72
+    Width = 57
+    Caption = 'cKOUT'
+    Checked = True
+    State = cbChecked
+    TabOrder = 42
+  end
+  object CheckBox8: TCheckBox
+    Left = 696
+    Height = 19
+    Top = 96
+    Width = 45
+    Caption = 'cKIN'
+    TabOrder = 43
+  end
+  object CheckBox9: TCheckBox
+    Left = 696
+    Height = 19
+    Top = 120
+    Width = 61
+    Caption = 'cClOUT'
+    TabOrder = 44
+  end
+  object CheckBox10: TCheckBox
+    Left = 696
+    Height = 19
+    Top = 144
+    Width = 49
+    Caption = 'cClIN'
+    Checked = True
+    State = cbChecked
+    TabOrder = 45
+  end
+  object CheckBox11: TCheckBox
+    Left = 696
+    Height = 19
+    Top = 168
+    Width = 94
+    Caption = 'GHK Potential'
+    TabOrder = 46
+  end
+  object CheckBox12: TCheckBox
+    Left = 696
+    Height = 19
+    Top = 192
+    Width = 114
+    Caption = 'Millman Potential'
+    TabOrder = 47
+  end
+  object CheckBox13: TCheckBox
+    Left = 696
+    Height = 19
+    Top = 216
+    Width = 69
+    Caption = 'Potencjal'
+    Checked = True
+    State = cbChecked
+    TabOrder = 48
+  end
+  object CheckBox14: TCheckBox
+    Left = 696
+    Height = 19
+    Top = 264
+    Width = 38
+    Caption = 'iNa'
+    TabOrder = 49
+  end
+  object CheckBox15: TCheckBox
+    Left = 696
+    Height = 19
+    Top = 312
+    Width = 34
+    Caption = 'iCl'
+    TabOrder = 50
+  end
+  object CheckBox16: TCheckBox
+    Left = 696
+    Height = 19
+    Top = 288
+    Width = 30
+    Caption = 'iK'
+    TabOrder = 51
+  end
+  object CheckBox17: TCheckBox
+    Left = 696
+    Height = 19
+    Top = 240
+    Width = 55
+    Caption = 'iPump'
+    TabOrder = 52
+  end
+  object Grupa1: TGroupBox
+    Left = 698
+    Height = 65
+    Top = 553
+    Width = 227
+    Caption = 'RESULTS'
+    ClientHeight = 47
+    ClientWidth = 223
+    TabOrder = 53
+    object Label70: TLabel
+      Left = 10
+      Height = 16
+      Top = 12
+      Width = 51
+      Caption = 'Potential:'
+      ParentColor = False
+    end
+    object Edit34: TEdit
+      Left = 66
+      Height = 23
+      Top = 4
+      Width = 80
+      TabOrder = 0
+      Text = '0'
+    end
+    object Label71: TLabel
+      Left = 146
+      Height = 16
+      Top = 11
+      Width = 8
+      Caption = 'V'
+      ParentColor = False
+    end
+  end
+  object Label61: TLabel
+    Left = 632
+    Height = 16
+    Top = 31
+    Width = 36
+    Caption = 'l/(N*s)'
+    ParentColor = False
+  end
+  object Label65: TLabel
+    Left = 365
+    Height = 16
+    Top = 375
+    Width = 120
+    Caption = 'Impermeant Ions_OUT'
+    ParentColor = False
+  end
+  object Edit36: TEdit
+    Left = 488
+    Height = 23
+    Top = 368
+    Width = 80
+    TabOrder = 54
+    Text = '49,8'
+  end
+  object Label67: TLabel
+    Left = 568
+    Height = 16
+    Top = 375
+    Width = 41
+    Caption = 'mmol/l'
+    ParentColor = False
+  end
+  object CheckBox18: TCheckBox
+    Left = 336
+    Height = 19
+    Top = 156
+    Width = 238
+    Caption = 'Plasma membrane impermeable to water'
+    Checked = True
+    State = cbChecked
+    TabOrder = 55
+  end
+  object CheckBox19: TCheckBox
+    Left = 16
+    Height = 19
+    Top = 560
+    Width = 150
+    Caption = 'Set the ending condition'
+    Checked = True
+    State = cbChecked
+    TabOrder = 56
+  end
+  object Label69: TLabel
+    Left = 16
+    Height = 16
+    Top = 586
+    Width = 136
+    Caption = '| iK+iNa+iCl+iPump | <= '
+    ParentColor = False
+  end
+  object Edit37: TEdit
+    Left = 156
+    Height = 23
+    Top = 579
+    Width = 80
+    TabOrder = 57
+    Text = '1e-20'
+  end
+  object Label73: TLabel
+    Left = 238
+    Height = 16
+    Top = 586
+    Width = 20
+    Caption = 'mA'
+    ParentColor = False
+  end
+  object Label75: TLabel
+    Left = 312
+    Height = 16
+    Top = 436
+    Width = 178
+    Caption = 'Charge of Impermeant Ions_OUT:'
+    ParentColor = False
+  end
+  object Edit38: TEdit
+    Left = 488
+    Height = 23
+    Top = 427
+    Width = 80
+    TabOrder = 58
+    Text = '35'
+  end
+  object Label76: TLabel
+    Left = 568
+    Height = 16
+    Top = 434
+    Width = 46
+    Caption = '(-mEq)/l'
+    ParentColor = False
+  end
+  object CheckBox20: TCheckBox
+    Left = 696
+    Height = 19
+    Top = 336
+    Width = 93
+    Caption = 'Osmolarity IN'
+    TabOrder = 59
+  end
+  object CheckBox21: TCheckBox
+    Left = 696
+    Height = 19
+    Top = 359
+    Width = 105
+    Caption = 'Osmolarity OUT'
+    TabOrder = 60
+  end
+  object CheckBox22: TCheckBox
+    Left = 696
+    Height = 19
+    Top = 384
+    Width = 77
+    Caption = 'Water flow'
+    TabOrder = 61
+  end
+  object CheckBox23: TCheckBox
+    Left = 696
+    Height = 19
+    Top = 408
+    Width = 83
+    Caption = 'Cell volume'
+    TabOrder = 62
+  end
+  object CheckBox24: TCheckBox
+    Left = 816
+    Height = 19
+    Top = 168
+    Width = 115
+    Caption = 'Modified Millman'
+    TabOrder = 63
+  end
+  object CheckBox25: TCheckBox
+    Left = 816
+    Height = 19
+    Top = 192
+    Width = 90
+    Caption = 'Our Potential'
+    TabOrder = 64
+  end
+  object CheckBox26: TCheckBox
+    Left = 816
+    Height = 19
+    Top = 216
+    Width = 95
+    Caption = 'Modified GHK'
+    TabOrder = 65
+  end
+end
